@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+
+
+
+cmd line: python main.py --env simple_torus --algorithm ddpg_symmetric --collaborative True --world_size 2 --n_steps 167 --n_epochs 42000 --decay 5000 --seed 72 --nb_agents 4 --nb_prey 1
+
+
+Simulation configurations:
+------------------------------
+actor_hidden: [128, 128]
+actor_lr: 0.0001
+algorithm: ddpg_symmetric
+batch_size: 512
+buffer_length: 500000
+checkpoint_interval: 2000
+checkpoint_path: None
+clip_norm: 0.5
+collaborative: True
+comm_env: False
+comm_noise: 0.5
+comm_range: 0.75
+comm_type: none
+critic_hidden: [128, 128, 128]
+critic_lr: 0.001
+decay: 5000
+directory: results/ddpg_symmetric_simple_torus/exp_01_30_2023__09_16_52
+discrete: False
+distance_end: 1.5
+distance_start: 1.5
+env: simple_torus
+epsilon_end: 0.05
+epsilon_start: 0.95
+equivariant: False
+gamma: 0.99
+init_range_thresh: 1.0
+lambda_coeff: 0.5
+log_interval: 50
+mode: train
+multiagent_fn: <class 'algorithms.ddpg_symmetric.DDPG_Runner'>
+n_epochs: 42000
+n_epochs_test: 100
+n_steps: 167
+n_threads: None
+nb_agents: 4
+nb_prey: 1
+norm_obs_var_clip: 1e-06
+normalize: False
+normalize_env: False
+num_landmarks: 0
+opt: adam
+particle_env: True
+pred_test_vel: 0.9
+pred_vel_end: 1.2
+pred_vel_start: 0.5
+render: False
+scripts: ['main.py', 'configs.py']
+seed: 72
+tau: 0.01
+test_predator: greedy
+test_prey: cosine
+update_steps: 5
+use_curriculum: True
+use_sensor_range: True
+verbose: False
+warmup_episodes: 333
+world_size: 2.0
+
+
+
+
+
+
