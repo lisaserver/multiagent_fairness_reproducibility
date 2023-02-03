@@ -96,9 +96,7 @@ python eval/make_plots.py --fp path/of/trajectories --plot (1-5)
 for 4 agents:
 python eval/make_plots_4_predators.py --fp path/of/trajectories --plot (1-3)
 ```
-
 Finally, we have created a jupyter notebook where you can reproduce our plots, and it can be found in:
 ```
 readme_jupyter.ipynb
 ```
-
